@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>ToDo App</title>
+  <meta charset="utf-8" />
+  <meta name="description" content="To-Do app" />
+  <meta name="robots" content="noindex,nofollow" />
+
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
+  <link rel="stylesheet" href="{{ STATIC_URL }}css/main.css" />
+  <!--[if lt IE 9]>
+  <script src="{{ STATIC_URL }}js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+
+  {% block content %}
+  {% endblock %}
+
+  {# javascript library #}
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/0.9.10/backbone-min.js"></script>
+
+  <script src="{{ STATIC_URL }}js/main.js"></script>
+</body>
+</html>

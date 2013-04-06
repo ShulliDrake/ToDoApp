@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <section id="projects">
+    <button class="add">add project</button>
+    <div id="total_count" class="counter">
+      <label>total</label>
+      <div class="count_box"><span class="i">12</span>projects</div>
+    </div><!--counter-->
+    <div class="column">
+      <div class="heading">To Do</div><!--heading-->
+      <div class="counter">
+        <div class="count_box"><span class="i">4</span>projects</div>
+      </div><!--counter-->
+      <ul id="todo" class="sortable">
+        <li>Project 1</li>
+        <li>Project 2</li>
+        <li>Project 3</li>
+        <li>Project 4</li>
+      </ul>
+    </div><!--column-->
+
+    <div class="column">
+      <div class="heading">In Progress</div>
+      <div class="counter">
+        <div class="count_box"><span class="i">4</span>projects</div>
+      </div><!--counter-->
+      <ul id="in_progress" class="sortable">
+        <li>Project 1</li>
+        <li>Project 2</li>
+        <li>Project 3</li>
+        <li>Project 4</li>
+      </ul>
+    </div><!--column-->
+
+    <div class="column">
+      <div class="heading">Done</div>
+      <div class="counter">
+        <div class="count_box"><span class="i">4</span>projects</div>
+      </div><!--counter-->
+      <ul id="done" class="sortable">
+        <li>Project 1</li>
+        <li>Project 2</li>
+        <li>Project 3</li>
+        <li>Project 4</li>
+      </ul>
+    </div><!--column-->
+  </section><!--projects-->
+{% endblock %}

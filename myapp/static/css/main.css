@@ -1,0 +1,20 @@
+* { margin:0; padding:0; }
+body { font-size:1em; font-family: Arial, Sans-Serif; color:#333333; background-color:#d8d8d8; }
+a { text-decoration:none; color:#333333; }
+ul, ol { list-style:none; }
+
+#projects { margin:100px auto 0; width:950px; position:relative; }
+#projects button.add { display:block; color:#fff; font-size:1em; background-color:#424242; border-radius:3px; padding:8px 10px; border:none; }
+#projects .column { float:left; position:relative; margin:15px 10px 10px 0; width:300px; }
+#projects .column .heading { padding:15px; background-color:gray; color:#fff; font-size:1.2em; }
+#projects .column li { padding:15px; border-bottom:1px solid #d8d8d8; background-color:#fff; font-size:0.9em; }
+/* total counter */
+#projects #total_count { position:absolute; right:41px; top:-25px; }
+#projects #total_count .count_box { margin-top:5px; }
+#projects .counter label { text-transform:uppercase; color:#424242; font-weight:bold; }
+/* counter */
+#projects .column .counter { position:absolute; right:10px; top:8px; }
+#projects .counter { text-align:center; }
+#projects .count_box { background-color:#fff; padding:5px; border-radius:3px; font-size:0.6em; color:#929292; line-height:1.4em; text-transform:uppercase; }
+.count_box span.i { display:block; font-size:1.2em; font-weight:bold; color:#424242; }
+
