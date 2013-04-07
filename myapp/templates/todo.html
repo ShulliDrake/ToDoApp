@@ -2,12 +2,15 @@
 
 {% block content %}
   <section id="projects">
-    <button class="add">add project</button>
+    <div id="add_project">
+      <button class="add">add project</button>
+    </div>
+
     <div id="total_count" class="counter">
       <label>total</label>
       <div class="count_box"><span class="i">12</span>projects</div>
     </div><!--counter-->
-    <div class="column">
+    <div class="column todo">
       <div class="heading">To Do</div><!--heading-->
       <div class="counter">
         <div class="count_box"><span class="i">4</span>projects</div>
@@ -20,7 +23,7 @@
       </ul>
     </div><!--column-->
 
-    <div class="column">
+    <div class="column inprogress">
       <div class="heading">In Progress</div>
       <div class="counter">
         <div class="count_box"><span class="i">4</span>projects</div>
@@ -33,7 +36,7 @@
       </ul>
     </div><!--column-->
 
-    <div class="column">
+    <div class="column done">
       <div class="heading">Done</div>
       <div class="counter">
         <div class="count_box"><span class="i">4</span>projects</div>
