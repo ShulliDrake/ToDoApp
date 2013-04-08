@@ -1,21 +1,150 @@
 * { margin:0; padding:0; }
-body { font-size:1em; font-family: Arial, Sans-Serif; color:#333333; background-color:#d8d8d8; }
-a { text-decoration:none; color:#333333; }
-ul, ol { list-style:none; }
-
-#projects { margin:100px auto 0; width:950px; position:relative; }
-#projects button.add { display:block; color:#fff; font-size:1em; background-color:#424242; border-radius:3px; padding:8px 10px; border:none; }
-#projects .column { float:left; position:relative; margin:15px 10px 10px 0; width:300px; }
-#projects .column .heading { padding:15px; background-color:gray; color:#fff; font-size:1.2em; }
-#projects .column ul { min-height:100px; }
-#projects .column li { padding:15px; border-bottom:1px solid #d8d8d8; background-color:#fff; font-size:0.9em; }
+body {
+  font-size:1em;
+  font-family:Arial, Sans-Serif;
+  color:#333333;
+  background-color:#d8d8d8;
+}
+a {
+  text-decoration:none;
+  color:#333333;
+}
+ul, ol {
+  list-style:none;
+}
+#projects {
+  margin:100px auto 0;
+  width:950px;
+  position:relative;
+}
+#projects button.add {
+  display:block;
+  color:#fff;
+  font-size:1em;
+  border-radius:3px;
+  padding:8px 10px;
+  border:1px solid #828282;
+  background-color:#424242;
+  background:linear-gradient(top, #626262, #222);
+  background:-webkit-gradient(linear, left top, left bottom, from(#626262), to(#222));
+  background:-moz-linear-gradient(top, #626262, #222);
+  background:-o-linear-gradient(top, #626262, #222);
+  box-shadow:0px 2px 2px -2px #222;
+ }
+#projects .column {
+  float:left;
+  position:relative;
+  margin:15px 10px 10px 0;
+  width:300px; }
+#projects .column .heading {
+  padding:15px;
+  background-color:gray;
+  color:#fff;
+  font-size:1.2em; }
+#projects .column ul {
+  min-height:100px;
+}
+#projects .column li {
+  padding:15px;
+  border-bottom:1px solid #d8d8d8;
+  background-color:#fff;
+  font-size:0.9em;
+}
 /* total counter */
-#projects #total_count { position:absolute; right:41px; top:-25px; }
-#projects #total_count .count_box { margin-top:5px; }
-#projects .counter label { text-transform:uppercase; color:#424242; font-weight:bold; }
+#projects #total_count {
+  position:absolute;
+  right:40px;
+  top:-24px;
+}
+#projects #total_count .count_box {
+  margin-top:5px;
+}
+#projects .counter label {
+  text-transform:uppercase;
+  color:#424242;
+  font-weight:bold;
+}
 /* counter */
-#projects .column .counter { position:absolute; right:10px; top:8px; }
-#projects .counter { text-align:center; }
-#projects .count_box { background-color:#fff; padding:5px; border-radius:3px; font-size:0.6em; color:#929292; line-height:1.4em; text-transform:uppercase; }
-.count_box span.i { display:block; font-size:1.2em; font-weight:bold; color:#424242; }
+#projects .column .counter {
+  position:absolute;
+  right:10px;
+  top:8px;
+}
+#projects .counter {
+  text-align:center;
+}
+#projects .count_box {
+  background-color:#fff;
+  padding:5px;
+  border-radius:3px;
+  font-size:0.6em;
+  color:#929292;
+  line-height:1.4em;
+  text-transform:uppercase;
+}
+.count_box span.i {
+  display:block;
+  font-size:1.2em;
+  font-weight:bold;
+  color:#424242;
+}
 
+/* dialog */
+#add_dialog p{
+  padding-top:5px;
+}
+#add_dialog label {
+  display: block;
+  font-weight:bold;
+  margin-top:10px;
+  paddin-bottom:5px;
+}
+#add_dialog input.ui-state-error {
+  color:#222;
+}
+#error_msg {
+  margin-top:5px;
+  border:none;
+  color:red;
+}
+
+/* jquery ui dialog override */
+.ui-dialog .ui-dialog-content {
+  padding-top:0;
+  padding-bottom:0;
+}
+.ui-dialog-titlebar {
+  color:#fff;
+  background:#424242;
+  background:linear-gradient(top, #626262, #333);
+  background:-webkit-gradient(linear, left top, left bottom, from(#626262), to(#333));
+  background:-moz-linear-gradient(top, #626262, #333);
+  background:-o-linear-gradient(top, #626262, #333);
+}
+.ui-dialog .ui-dialog-title {
+  font-weight:normal;
+  font-size:1.2em;
+}
+.ui-button-text-only .ui-button-text {
+  padding:.2em 1em;
+}
+.ui-dialog .ui-dialog-buttonpane {
+  padding-top:0;
+  margin-top:0;
+}
+.ui-widget-content {
+  border:none;
+}
+.ui-dialog {
+  font-size:0.8em;
+  border:1px solid #a8a8a8;
+}
+.ui-corner-all {
+  border-radius:3px;
+}
+.ui-widget input {
+  border:1px solid #828282;
+  font-size:1.2em;
+  padding:3px;
+  margin-top:5px;
+}

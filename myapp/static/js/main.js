@@ -170,9 +170,10 @@ NL.views.DoneView = NL.views.ColumnView.extend({
 NL.views.AddButtonView = Backbone.View.extend({
     //underscore template for "add project" dialog.
     template: _.template('<div id="add_dialog" title="Add a project">' +
-			 '<label for="project_name">Project Name</label>' +
+			 '<p>Please enter a project to add to "To Do" list.</p>' +
+			 '<label for="project_name">Project Name:</label>' +
 			 '<input type="text" name="project_name" id="project_name" class="text ui-widget-content ui-corner-all" />' +
-			 '<span id="error_msg"></span>' +
+			 '<p id="error_msg"></p>' +
 			 '</div>'),
 
     dialogSelector: "#add_dialog",
